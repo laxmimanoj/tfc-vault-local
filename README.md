@@ -15,6 +15,7 @@ vault list auth/paymentservices/pstest/role<br />
 
 ## Terraform cli
 terraform init<br />
+terraform fmt<br >
 terraform plan<br />
 terraform apply -auto-approve<br />
 terraform destroy<br />
