@@ -1,7 +1,7 @@
 resource "vault_policy" "app_policy" {
   name   = "policy-${var.application_name}"
   policy = <<EOT
-path "${var.root_path}/data/${var.application_name}" {
+path "${var.path}/data" {
   capabilities = ["read"]
 }
 EOT

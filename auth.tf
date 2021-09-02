@@ -9,9 +9,9 @@
 
 #configure jwt auth
 resource "vault_jwt_auth_backend" "psjwt" {
-  path                   = var.root_path
+  path                   = var.path
   type                   = "jwt"
-  description            = var.auth_backend_desccription
+  description            = var.auth_backend_description
   jwt_validation_pubkeys = [file("cert.pem")]
 }
 

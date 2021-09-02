@@ -11,6 +11,14 @@ vault server -dev<br />
 vault status<br />
 http://localhost:8200/ui<br />
 
+vault list auth/paymentservices/pstest/role<br />
+
+## Terraform cli
+terraform init<br />
+terraform plan<br />
+terraform apply -auto-approve<br />
+terraform destroy<br />
+
 ## Generate a self-signed certificate 
 openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem<br />
 
